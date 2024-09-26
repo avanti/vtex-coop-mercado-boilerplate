@@ -1,0 +1,168 @@
+.Delivery-options--wrapper {
+  width: 100%;
+  border: solid 1px #ddd;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  padding: 11px;
+}
+
+.Delivery-options--wrapper:last-child {
+  margin-bottom: 0;
+}
+
+.Delivery-options--container {
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+}
+
+.Delivery-options--blocks {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.Delivery-options--block1 {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+  width: 50px;
+}
+
+.Delivery-options--block2 {
+  width: calc(100% - 366px);
+}
+
+.Delivery-options--block3 {
+  width: 100px;
+}
+
+.Delivery-options--block4 {
+  width: 196px;
+  line-height: 0;
+}
+
+.Delivery-options--header1 {
+  margin: 0;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 700;
+  color: #002846;
+}
+
+.Delivery-options--header2 {
+  margin: 0;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 700;
+  color: #fa6e50;
+}
+
+.Delivery-options--block4 button {
+  display: inline-flex;
+  border-radius: 6px;
+  border: 1px solid #fa6e50;
+  background: #fa6e50;
+  cursor: pointer;
+  width: 196px;
+  height: 50px;
+  padding: 0;
+}
+
+.Delivery-options--block4 button p {
+  font-family: "Montserrat";
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  margin: 0;
+  text-align: left;
+}
+
+.Delivery-options--ctaDesc {
+  display: inline-flex;
+  align-items: center;
+}
+
+.Delivery-options--ctaDesc img {
+  width: 18px;
+  height: 18px;
+  padding: 15px;
+}
+
+
+.Delivery-options-shippingValue-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.Delivery-options-shippingValue-container--text,
+.Delivery-options-shippingValue-container--price {
+  color: #002846;
+  text-align: center;
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.Delivery-options-shippingValue-container--price {
+  font-size: 14px;
+}
+
+.Delivery-options--deliveryMessage {
+  width: 100%;
+  text-align: right;
+  margin: 5px 0 -7px 0;
+  font-family: 'Montserrat';
+  font-size: 10px;
+  font-weight: 700;
+  color: #fa6e50;
+  height: 10px;
+}
+
+.Delivery-options--wrapper > img {
+  width: 60px;
+}
+
+@media (max-width: 639px) {
+  .Delivery-options--wrapper {
+    padding: 11px 23px;
+  }
+
+  .Delivery-options--blocks {
+    margin-bottom: 15px;
+  }
+
+  .Delivery-options--block1 {
+    margin-right: 8px;
+    width: 35px;
+  }
+
+  .Delivery-options--block2 {
+    width: calc(100% - 128px);
+  }
+
+  .Delivery-options--block3 {
+    width: 85px;
+  }
+
+  .Delivery-options--block4 {
+    width: auto;
+  }
+
+  .Delivery-options--block4 button {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .Delivery-options--ctaDesc img {
+    padding-left: 0;
+  }
+
+  .Delivery-options--deliveryMessage {
+    text-align: center;
+    height: 20px;
+  }
+}

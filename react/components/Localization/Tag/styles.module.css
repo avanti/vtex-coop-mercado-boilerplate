@@ -1,0 +1,101 @@
+:global(.vtex-sticky-layout-0-x-wrapper--sticky-header--stuck) .container {
+  min-width: 0;
+}
+
+.container {
+  min-width: 100px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  animation: 0.2s linear 0s 1 containerFadeIn;
+}
+
+.tc {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tag {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #fa6e50;
+  cursor: pointer;
+}
+
+.tag > svg {
+  margin-right: 5px;
+}
+
+@media (min-width: 768px) {
+  .tag > svg {
+    margin-right: 10px;
+  }
+}
+
+.address {
+  font-weight: 500;
+  color: #002846;
+  padding: 0 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: calc(100% - 125px);
+  width: min-content;
+}
+
+.button {
+  background: none;
+  border: none;
+  color: #002846;
+  text-decoration: underline;
+  font-size: 10px;
+  padding: 0;
+}
+
+.buttonInsertYourCep {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: #002846;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    justify-content: center;
+  }
+
+  .tag {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .buttonInsertYourCep {
+    color: #fa6e50;
+  }
+}
+
+
+@keyframes containerFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

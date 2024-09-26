@@ -1,0 +1,9 @@
+query getOrder($orderId: String!) {
+  order(orderId: $orderId) @context(provider: "vtex.orders-graphql") {
+    items {
+      id
+      quantity
+      seller
+    }
+  }
+}

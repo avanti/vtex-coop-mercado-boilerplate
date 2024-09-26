@@ -1,0 +1,230 @@
+.container {
+    position: relative;
+    padding: 40px 40px 30px 40px;
+    width: 725px;
+}
+
+@media (max-width: 1023px) {
+    .container {
+        width: 100%;
+    }
+}
+
+.headerText {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    color: #002846;
+}
+
+.headerCep {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    text-decoration-line: underline;
+    color: #111111;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.modeList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(calc(50% - 10px), 1fr));
+    grid-gap: 15px;
+    margin-top: 31px;
+    max-height: 250px;
+    padding-right: 15px;
+    overflow-y: scroll;
+}
+
+.modeList::-webkit-scrollbar {
+    width: 7px;
+}
+
+.modeList::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.modeList::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+
+.modeList::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.mode {
+    border: solid 1px #ddd;
+    background: #fff;
+    border-radius: 4px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 302px;
+}
+
+.mode:hover {
+    box-shadow: 0px 4px 15px -10px rgba(0, 0, 0, 0.15);
+}
+
+.modeSelected {
+    border-color: #FA6E50;
+}
+
+.modeHeader {
+    background: #fafafa;
+    padding: 25px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.modeHeaderText {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+.modeTitle {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #002846;
+}
+
+.modeFreight {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    display: block;
+    width: min-content;
+    color: #ffffff;
+    background: #FA6E50;
+    border-radius: 2px;
+    padding: 4px 10px;
+    white-space: pre;
+    margin: 8px 0 5px 0;
+}
+
+.modeEstimative {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    color: #444444;
+}
+
+.modeBody {
+    padding: 20px 26px;
+}
+
+.storesList {
+    max-height: 140px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.storesList::-webkit-scrollbar {
+    width: 3px;
+}
+
+.storesList::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+.storesList::-webkit-scrollbar-thumb {
+    background: #aaa;
+    border-radius: 2px;
+}
+
+.storesList::-webkit-scrollbar-thumb:hover {
+    background: #ccc;
+}
+
+.address {
+    position: relative;
+    padding-left: 20px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: #FA6E50;
+}
+
+.address::before {
+    content: url('');
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.button {
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background: #FA6E50;
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 20px;
+    cursor: pointer;
+    margin-top: 30px;
+    position: relative;
+}
+
+.button:disabled {
+    opacity: 0.4;
+}
+
+.button::before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: #ccc;
+    position: absolute;
+    top: -15px;
+}
+
+.inferiorAlert {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: -0.01em;
+    color: #E12D2D;
+}
+
+@media (max-width: 639px) {
+    .container {
+        padding: 27px 16px 24px 16px;
+    }
+
+    .modeList {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mode {
+        max-height: 320px;
+        width: 100%;
+    }
+}

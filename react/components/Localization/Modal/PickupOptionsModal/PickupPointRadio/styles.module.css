@@ -1,0 +1,102 @@
+.pickupPointInputWrapper {
+    border: solid 1px #ddd;
+    background: #fff;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    max-width: 317px;
+    padding: 10px;
+    justify-content: center;
+}
+
+.pickupPointInputWrapper.inputSelected {
+    border-color: #FA6E50;
+}
+
+.store {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+.inputRadio {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    margin: 0 20px 10px 5px;
+    cursor: pointer;
+}
+
+.inputRadio:before {
+    content: '';
+    position: absolute;
+    left: -3px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: solid 4px #fff;
+    box-shadow: 0 0 0px 2px rgb(0, 0, 0, 0.2);
+    top: -2px;
+    box-sizing: border-box;
+}
+
+.inputRadio:checked:before {
+    background-color: #002846;
+}
+
+.storeText {
+    width: calc(100% - 45px);
+}
+
+.storeTitle {
+    color: #FA6E50;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    display: block;
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    line-height: 18px;
+}
+
+.storeAddress {
+    color: #444;
+    font-size: 14px;
+    line-height: 18px;
+    display: block;
+    font-family: 'Montserrat';
+    font-weight: 500;
+}
+
+.storeDistance {
+  font-size: 11px;
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 0.25rem;
+  color: #FA6E50;
+  font-family: 'Montserrat';
+  line-height: 18px;
+}
+
+.address {
+    position: relative;
+    padding-left: 20px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: #3cc069;
+}
+
+@media (max-width: 639px) {
+    .pickupPointInputWrapper {
+        max-width: 100%;
+    }
+}

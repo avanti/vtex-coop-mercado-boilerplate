@@ -1,0 +1,16 @@
+query pickupPoint($id: String!) @context(provider: "vtex.store-graphql"){
+  pickupPoint(id: $id) {
+    id
+    isActive
+    friendlyName
+    address {
+      city
+      number
+      street
+      state
+      postalCode
+      neighborhood
+      geoCoordinates
+    }
+  }
+}

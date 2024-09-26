@@ -1,0 +1,12 @@
+query findSellersBySku($value: ID!) {
+  product (identifier: {field: sku, value: $value}) {
+    items{
+      sellers{
+        sellerId
+        commertialOffer {
+          AvailableQuantity
+        }
+      }
+    }
+  }
+}

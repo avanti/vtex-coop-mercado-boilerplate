@@ -1,0 +1,14 @@
+mutation ($orderformID: ID!, $input: OrderFormOpenTextInput!) {
+  updateOrderFormOpenTextField(orderFormId: $orderformID, input: $input) {
+    openTextField {
+      value
+    }
+    messages {
+      generalMessages {
+        code
+        status
+        text
+      }
+    }
+  }
+}

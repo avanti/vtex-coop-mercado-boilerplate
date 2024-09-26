@@ -1,0 +1,7 @@
+query order($orderId: String!) {
+  order(orderId: $orderId) @context(provider: "vtex.orders-graphql") {
+    openTextField {
+      value
+    }
+  }
+}

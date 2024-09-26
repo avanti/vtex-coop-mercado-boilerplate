@@ -1,0 +1,17 @@
+query getPickupPoints($page: Int = 1, $perPage: Int = 100) @context(provider: "vtex.admin-pickup-points") {
+  getPickupPoints(page: $page, perPage: $perPage) {
+    items {
+      id
+      isActive
+      name
+      address {
+        city
+        number
+        street
+        state
+        postalCode
+        neighborhood
+      }
+    }
+  }
+}

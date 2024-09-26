@@ -1,0 +1,12 @@
+query getCategory($id: Int) {
+  category(id: $id) {
+    id
+    name
+    hasChildren
+    children {
+      id
+      name
+      href
+    }
+  }
+}

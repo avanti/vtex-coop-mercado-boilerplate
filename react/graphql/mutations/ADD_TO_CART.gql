@@ -1,0 +1,6 @@
+mutation addToCart ($orderFormId: ID!, $items: [ItemInput], $salesChannel: String) {
+  addToCart(orderFormId: $orderFormId, items: $items, salesChannel: $salesChannel) {
+    id,
+    items
+  }
+}

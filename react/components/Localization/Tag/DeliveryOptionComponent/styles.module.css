@@ -1,0 +1,59 @@
+.Delivery--options-text {
+   font-size: 14px;
+   font-weight: 500;
+   display: flex;
+   color: #fa6e50;
+}
+
+.Delivery--options-text button {
+   box-sizing: border-box;
+   position: relative;
+   cursor: pointer;
+   background: none;
+   border: none;
+   color: #002846;
+   font-size: 14px;   
+   padding: 0;
+   padding-left: 2px;
+}
+
+.Delivery--options-text button::after {
+   content: "Alterar";   
+   border-bottom: 1px solid #002846;
+}
+
+@media (min-width: 768px) {
+   .Delivery--options-text {
+      display: block;
+      color: #002846;
+   }
+
+   .Delivery--options-text button {
+      font-size: 16px;
+      font-weight: 600;
+      padding-right: 10px;
+      padding-left: unset;
+   }
+
+   .Delivery--options-text button::before {
+      content: "";
+      background: #002846;
+      height: 1px;
+      width: calc(100% - 10px);
+      position: absolute;
+      background-repeat: no-repeat;
+      bottom: 0;
+   }
+
+   .Delivery--options-text button::after {
+      content: "";
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      border-style: solid;
+      border-color: #002846;
+      border-width: 0px 2px 2px 0px;
+      transform: rotate(45deg);
+      margin-left: 10px;
+   }
+}

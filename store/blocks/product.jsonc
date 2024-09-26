@@ -1,0 +1,38 @@
+{
+  "store.product": {
+    "children": [
+
+    ]
+  },
+
+  "product-summary.shelf": {
+    "children": [
+      "product-summary-add-to-list-button",
+      "product-summary-image",
+      "product-summary-name",
+      "product-rating-inline",
+      "product-summary-space",
+      "product-list-price",
+      "condition-layout.product#is-product-available"
+    ],
+    "props": {
+      "blockClass": "shelf-category"
+    }
+  },
+  "condition-layout.product#is-product-available": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "isProductAvailable"
+        }
+      ],
+      "Then": "add-to-cart-button",
+      "Else": "rich-text#unavailable-product"
+    }
+  },
+  "rich-text#unavailable-product": {
+    "props": {
+      "text": "INDISPONÍVEL"
+    }
+  }
+}

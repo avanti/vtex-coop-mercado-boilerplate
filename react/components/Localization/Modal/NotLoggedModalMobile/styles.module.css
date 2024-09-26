@@ -1,0 +1,79 @@
+.Login-failed--component-wrapper {
+   width: 250px;
+   background: #fff;   
+   height: 320px;
+   padding: 30px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.Login-failed--component-wrapper.Fixed-modal {
+   position: fixed;
+   z-index: 2222;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   border-radius: 3px;
+   padding: 20px 20px 30px;
+   height: 340px;
+}
+
+.Login-failed--component-wrapper > img {
+   width: 90px;
+}
+
+.Login-failed--message {
+   text-align: center;
+   margin: 0;
+   font-weight: 500;
+   font-size: 14px;
+   color: #002846;
+}
+
+.Login-failed-links-title {
+   text-align: center;
+   font-size: 13px;
+   font-weight: 500;
+   color: #002846;
+}
+
+.Login-failed--links-wrapper {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+}
+
+.Login-failed--links-wrapper a,
+.Login-failed--links-wrapper button {
+   border: none;
+   border-radius: 4px;   
+   cursor: pointer;
+   display: block;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 12px;
+   font-weight: 500;
+   line-height: 20px;
+   padding: 10px;
+   transition: .3s;
+   width: 100%;
+   height: 35px;
+   text-decoration: none;
+   text-align: center;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.Login-failed--links-wrapper .Login-failed--register {
+   background: #002846;
+   color: #ffffff;
+   margin-bottom: 10px;
+}
+
+.Login-failed--links-wrapper a.Login-failed--contact {
+   background: #ffffff;
+   color: #002846;
+   border: 1px solid #002846;
+}

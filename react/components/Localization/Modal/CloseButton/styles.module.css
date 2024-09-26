@@ -1,0 +1,22 @@
+.button {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+  background-image: url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M12.7966 0.76137C12.4159 0.378536 11.7987 0.378537 11.418 0.761371L6.59311 5.61364L1.76824 0.761398C1.38756 0.378564 0.770368 0.378565 0.389694 0.761398C0.00901863 1.14423 0.0090187 1.76493 0.389693 2.14776L5.21457 7L0.389667 11.8523C0.00899212 12.2351 0.00899178 12.8558 0.389667 13.2386C0.770341 13.6215 1.38754 13.6215 1.76821 13.2386L6.59311 8.38636L11.418 13.2387C11.7987 13.6215 12.4159 13.6215 12.7966 13.2387C13.1773 12.8558 13.1773 12.2351 12.7966 11.8523L7.97166 7L12.7966 2.14773C13.1772 1.7649 13.1772 1.1442 12.7966 0.76137Z' fill='%23002846'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  border: none;
+  position: absolute;
+  top: 18px;
+  right: 24px;
+  font-size: 0;
+  cursor: pointer;
+}
+
+@media (max-width: 639px) {
+  .button {
+    top: 10px;
+    right: 10px;
+  }
+}

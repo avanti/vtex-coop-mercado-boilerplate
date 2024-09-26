@@ -1,0 +1,69 @@
+.store {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.inputRadio {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  margin: 10px 20px 10px 5px;
+}
+
+.inputRadio:before {
+  content: '';
+  position: absolute;
+  left: -3px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: solid 4px #fff;
+  box-shadow: 0 0 0px 2px rgb(0, 0, 0, 0.2);
+  top: -2px;
+  box-sizing: border-box;
+}
+
+.inputRadio:checked:before {
+  background-color: #002846;
+}
+
+.storeText {
+  width: calc(100% - 32px);
+}
+
+.storeTitle {
+  color: #FA6E50;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  display: block;
+  text-transform: uppercase;
+}
+
+.storeAddress {
+  color: #444;
+  font-size: 14px;
+  line-height: 18px;
+  display: block;
+}
+
+.address {
+  position: relative;
+  padding-left: 20px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #FA6E50;
+}
+
+.deliveryEstimate {
+  color: #444;
+  font-size: 14px;
+  line-height: 18px;
+  display: block;
+}
